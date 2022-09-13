@@ -1,13 +1,19 @@
 package client
 
 import (
+	"fmt"
+	"os"
 	"testing"
 )
 
 func TestClient(t *testing.T) {
+	host := os.Getenv("server_host")
+	if host == "" {
+		host = "localhost"
+	}
 	id := "1"
 	client := &Client{
-		BaseUrl: "http://localhost:8080",
+		BaseUrl: fmt.Sprintf("http://%s:8080", host),
 	}
 
 	user, err := client.FetchUserDetails(id)

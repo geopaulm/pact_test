@@ -6,6 +6,7 @@ import (
 	//
 	"errors"
 	"fmt"
+	"os"
 	"testing"
 
 	"github.com/geo/pacttest/models"
@@ -13,6 +14,9 @@ import (
 )
 
 func TestClientPact(t *testing.T) {
+	if os.Getenv("SKIP_PACT") != "" {
+		t.Skip("Skipping pact tests")
+	}
 	pact := dsl.Pact{
 		Consumer: "example-client",
 		Provider: "example-server",

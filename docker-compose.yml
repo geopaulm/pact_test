@@ -14,3 +14,16 @@ services:
       - $PWD:/go/src/server
     ports:
       - 8080:8080
+
+  client_test:
+    build: 
+      context: .
+      dockerfile: Dockerfile.test
+    networks:
+      - integration-test
+    volumes:
+      - $PWD:/go/src/client
+    depends_on:
+      - server
+    environment:
+      - server_host=server

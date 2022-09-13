@@ -1,0 +1,10 @@
+FROM golang:1.19-alpine
+
+ENV GO111MODULE=on
+ENV GOFLAGS=-mod=mod
+
+ENV APP_HOME /go/src/client
+RUN mkdir -p "$APP_HOME"
+
+WORKDIR "$APP_HOME"
+CMD SKIP_PACT=true CGO_ENABLED=0 go test ./client -v
