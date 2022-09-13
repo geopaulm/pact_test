@@ -2,8 +2,9 @@ module github.com/geo/pacttest
 
 go 1.19
 
+require github.com/gorilla/mux v1.8.0
+
 require (
-	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/hashicorp/go-version v1.5.0 // indirect
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect

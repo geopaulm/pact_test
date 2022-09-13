@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"time"
@@ -20,12 +21,13 @@ func StartServer() {
 
 	srv := &http.Server{
 		Handler: router,
-		Addr:    "127.0.0.1:8080",
+		Addr:    "0.0.0.0:8080",
 		// Good practice: enforce timeouts for servers you create!
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
 
+	fmt.Println("Started server. Listening..")
 	log.Fatal(srv.ListenAndServe())
 }
 
