@@ -1,0 +1,16 @@
+version: '3'
+networks:
+  integration-test:
+    driver: bridge
+
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - integration-test
+    volumes:
+      - $PWD:/go/src/server
+    ports:
+      - 8080:8080
