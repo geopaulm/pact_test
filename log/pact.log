@@ -1,0 +1,47 @@
+# Logfile created on 2022-09-13 12:44:26 +0100 by logger.rb/66358
+I, [2022-09-13T12:44:26.505915 #80326]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:44:26.506130 #80326]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:44:26.506189 #80326] DEBUG -- : body :
+I, [2022-09-13T12:44:26.518693 #80326]  INFO -- : Received response with status: 502, headers: {"Date"=>"Tue, 13 Sep 2022 11:44:26 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2022-09-13T12:44:26.518786 #80326] DEBUG -- : body: 
+W, [2022-09-13T12:44:26.521869 #80326]  WARN -- : No content type found, performing text diff on body
+I, [2022-09-13T12:48:55.749193 #80736]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:48:55.750061 #80736]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:48:55.750139 #80736] DEBUG -- : body :
+I, [2022-09-13T12:48:55.763116 #80736]  INFO -- : Received response with status: 502, headers: {"Date"=>"Tue, 13 Sep 2022 11:48:55 GMT", "Content-Length"=>"0"}, see debug logs for body
+D, [2022-09-13T12:48:55.763207 #80736] DEBUG -- : body: 
+W, [2022-09-13T12:48:55.766608 #80736]  WARN -- : No content type found, performing text diff on body
+I, [2022-09-13T12:51:16.836764 #80968]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:51:16.837481 #80968]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:51:16.837566 #80968] DEBUG -- : body :
+I, [2022-09-13T12:51:16.850101 #80968]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"46", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Tue, 13 Sep 2022 11:51:16 GMT"}, see debug logs for body
+D, [2022-09-13T12:51:16.850174 #80968] DEBUG -- : body: {"id":"1","firstName":"Geo","lastName":"Paul"}
+I, [2022-09-13T12:53:56.970150 #81105]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:53:56.970815 #81105]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:53:56.970883 #81105] DEBUG -- : body :
+I, [2022-09-13T12:53:56.983795 #81105]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"56", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Tue, 13 Sep 2022 11:53:56 GMT"}, see debug logs for body
+D, [2022-09-13T12:53:56.983875 #81105] DEBUG -- : body: {
+	"id": "1",
+	"firstName": "Geo",
+	"lastName": "Paul"
+}
+I, [2022-09-13T12:54:48.369502 #81214]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:54:48.370161 #81214]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:54:48.370237 #81214] DEBUG -- : body :
+I, [2022-09-13T12:54:48.383051 #81214]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"46", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Tue, 13 Sep 2022 11:54:48 GMT"}, see debug logs for body
+D, [2022-09-13T12:54:48.383121 #81214] DEBUG -- : body: {"id":"1","firstName":"Geo","lastName":"Paul"}
+I, [2022-09-13T12:57:21.784382 #81345]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:57:21.784929 #81345]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:57:21.784959 #81345] DEBUG -- : body :
+I, [2022-09-13T12:57:21.795948 #81345]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"46", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Tue, 13 Sep 2022 11:57:21 GMT"}, see debug logs for body
+D, [2022-09-13T12:57:21.796025 #81345] DEBUG -- : body: {"id":"1","firstName":"Geo","lastName":"Paul"}
+I, [2022-09-13T12:59:58.155878 #81555]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T12:59:58.156643 #81555]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T12:59:58.156726 #81555] DEBUG -- : body :
+I, [2022-09-13T12:59:58.170269 #81555]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"46", "Content-Type"=>"application/json", "Date"=>"Tue, 13 Sep 2022 11:59:58 GMT"}, see debug logs for body
+D, [2022-09-13T12:59:58.170345 #81555] DEBUG -- : body: {"id":"1","firstName":"Geo","lastName":"Paul"}
+I, [2022-09-13T13:00:23.143484 #81667]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Geo exists. User Geo is requested with GET users/1 returns a response which has status code 200'
+I, [2022-09-13T13:00:23.144217 #81667]  INFO -- : Sending GET request to path: "users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Geo exists."}]}, see debug logs for body
+D, [2022-09-13T13:00:23.144302 #81667] DEBUG -- : body :
+I, [2022-09-13T13:00:23.156720 #81667]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"46", "Content-Type"=>"application/json", "Date"=>"Tue, 13 Sep 2022 12:00:23 GMT"}, see debug logs for body
+D, [2022-09-13T13:00:23.156798 #81667] DEBUG -- : body: {"id":"1","firstName":"Geo","lastName":"Paul"}

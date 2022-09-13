@@ -30,6 +30,7 @@ func TestClientPact(t *testing.T) {
 			}).
 			WillRespondWith(dsl.Response{
 				Status: 200,
+
 				Body: dsl.Like(User{
 					Id:        id,
 					FirstName: "Geo",
