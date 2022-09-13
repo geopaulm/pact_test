@@ -1,0 +1,44 @@
+{
+  "consumer": {
+    "name": "example-client"
+  },
+  "provider": {
+    "name": "example-server"
+  },
+  "interactions": [
+    {
+      "description": "User Geo is requested",
+      "providerState": "User Geo exists.",
+      "request": {
+        "method": "GET",
+        "path": "users/1",
+        "matchingRules": {
+          "$.path": {
+            "match": "regex",
+            "regex": "users\\/[0-9]+"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "id": "1",
+          "firstName": "Geo",
+          "lastName": "Paul"
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

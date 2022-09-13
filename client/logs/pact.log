@@ -1,0 +1,62 @@
+I, [2022-09-13T20:15:42.623274 #87985]  INFO -- : Registered expected interaction GET users/1
+D, [2022-09-13T20:15:42.623505 #87985] DEBUG -- : {
+  "description": "User Geo is requested",
+  "providerState": "User Geo exists.",
+  "request": {
+    "method": "GET",
+    "path": {
+      "json_class": "Pact::Term",
+      "data": {
+        "generate": "users/1",
+        "matcher": {
+          "json_class": "Regexp",
+          "o": 0,
+          "s": "users/[0-9]+"
+        }
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "id": "1",
+        "firstName": "Geo",
+        "lastName": "Paul"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2022-09-13T20:15:42.811169 #87985]  INFO -- : Received request GET /users/1
+D, [2022-09-13T20:15:42.811470 #87985] DEBUG -- : {
+  "path": "/users/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:62473",
+    "User-Agent": "Go-http-client/1.1",
+    "Accept-Encoding": "gzip",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-09-13T20:15:42.811806 #87985]  INFO -- : Found matching response for GET users/1
+D, [2022-09-13T20:15:42.811975 #87985] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "id": "1",
+      "firstName": "Geo",
+      "lastName": "Paul"
+    }
+  }
+}
+I, [2022-09-13T20:15:42.813609 #87985]  INFO -- : Verifying - interactions matched
+I, [2022-09-13T20:15:42.815215 #87985]  INFO -- : Cleared interactions
+I, [2022-09-13T20:15:42.818511 #87985]  INFO -- : Writing pact for example-server to /Users/geopaul/code/pacttest/client/pacts/example-client-example-server.json
