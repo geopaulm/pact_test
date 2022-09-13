@@ -11,10 +11,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func main() {
-	StartServer()
-}
-
 func StartServer() {
 	router := mux.NewRouter()
 	router.HandleFunc("/users/{id:[0-9]+}", UserHandler)
