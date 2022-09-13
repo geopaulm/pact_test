@@ -1,4 +1,4 @@
-package main
+package client
 
 import (
 	//
@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/geo/pacttest/models"
 	"github.com/pact-foundation/pact-go/dsl"
 )
 
@@ -31,7 +32,7 @@ func TestClientPact(t *testing.T) {
 			WillRespondWith(dsl.Response{
 				Status: 200,
 
-				Body: dsl.Like(User{
+				Body: dsl.Like(models.User{
 					Id:        id,
 					FirstName: "Geo",
 					LastName:  "Paul",

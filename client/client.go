@@ -1,10 +1,12 @@
-package main
+package client
 
 import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/geo/pacttest/models"
 )
 
 // Simple client fetching user details
@@ -12,7 +14,7 @@ type Client struct {
 	BaseUrl string
 }
 
-func (client Client) FetchUserDetails(id string) (*User, error) {
+func (client Client) FetchUserDetails(id string) (*models.User, error) {
 	url := fmt.Sprintf("%s/users/%s", client.BaseUrl, id)
 	resp, err := http.Get(url)
 
@@ -25,7 +27,7 @@ func (client Client) FetchUserDetails(id string) (*User, error) {
 		return nil, err
 	}
 
-	var user User
+	var user models.User
 	err = json.Unmarshal(body, &user)
 	if err != nil {
 		return nil, err

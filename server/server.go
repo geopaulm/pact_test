@@ -1,4 +1,4 @@
-package main
+package server
 
 import (
 	"encoding/json"
@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/geo/pacttest/models"
 	"github.com/gorilla/mux"
 )
 
@@ -33,7 +34,7 @@ func StartServer() {
 
 func UserHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	user := &User{
+	user := &models.User{
 		Id:        vars["id"],
 		FirstName: "Geo",
 		LastName:  "Paul",
